@@ -1,0 +1,658 @@
+<html lang="en">
+    
+<head>
+    <title>Online Dogs and Dog Accessories Store</title>
+   <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script> 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+        </head>
+    
+    <body>
+        
+        
+        <div class="container">
+            
+            <div class="modal fade" id="signin">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Sign-in</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+          <div class="form-group">
+  <label for="usr">Username:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  
+                <button type="submit" class="form-control btn btn-info" id="pwd">Sign-In</button>
+</div>
+            <a href="#">Forgot password</a><br>
+            <a href="#" data-toggle="modal" data-target="#signup"  data-dismiss="modal">New here! Create an account</a>
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+            
+            <div class="modal fade" id="signup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Sign-up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">Name:</label><br>
+  <input placeholder="First Name" type="text" class="form-control mr-1 " id="usr">
+              
+</div>
+            <div class="form-group">
+  
+  <input placeholder="Last Name" type="text" class="form-control" >
+              
+</div></form>
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">E-Mail:</label><br>
+  <input  type="email" class="form-control mr-1 w-80" id="usr" style="width: 410">
+              
+</div>
+            </form>
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">Mobile:</label><br>
+  <input  type="text" class="form-control mr-1 w-80" id="usr" style="width: 406">
+              
+</div>
+            </form>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  <label for="pwd">Confirm Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  
+                <button type="submit" class="form-control btn btn-info" id="pwd">Submit</button>
+</div>
+            
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+            
+            
+            
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top my-3"  >
+  
+  <a class="navbar-brand" href="index.html">
+      <img  src="png/logo.png" alt="DoggoShop_logo" style="width: 25px;height: auto"></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            
+ <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item ">
+      <a class="nav-link " href="dog_shop.html" >
+        Shop
+        </a></li>
+     
+    <li class="nav-item">
+      <a class="nav-link" href="adopt.html">Adopt</a>
+    </li>
+    
+      <li class="nav-item">
+      <a class="nav-link" href="care-art.html">Care Tips</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+      
+          
+  </ul>
+     
+     <a class="nav-item nav-link p-0 mr-2" data-toggle="modal" data-target="#signin"  ><img href="#" alt="login" src="png/login.png" style="width: 25px;height: auto   "></a>
+    
+           
+        <form class="form-inline " action="#" style="margin-bottom: 0" >
+    <input class="form-control mr-0 mr-sm-2 " type="text" placeholder="Search" style="max-width: 120px">
+    <button class="btn  btn-outline-info" type="submit">Search</button>
+  </form>  </div>
+</nav>
+        
+        
+       
+              
+        <div class="popdls mb-4" >
+            <h1 class="display-4  mb-4  ml-4" >Shop - Dogs</h1>
+         <style>.popdls a:hover{text-decoration: none;
+                color: dimgrey}</style>
+           
+            
+             <ul class="nav nav-tabs mb-3" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Popular Breeds</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">All Breeds A-Z</a>
+    </li>
+   
+  </ul>
+            <div class="tab-content "  >
+                
+                <div id="home" class=" tab-pane active">
+            <div class="d-flex mb-3">
+                
+                              
+             <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/English-Mastiff.jpg" alt="english-mastiff" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="detail-shop.html">English Mastiff</a></h5>
+      <p class="card-text">INR 50000 - 125000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/beagle.jpg" alt="beagle" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Beagle</a></h5>
+      <p class="card-text">INR 23000 - 28000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/German%20ShepherdGerman%20Shepherd.jpg" alt="German Shepherd" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">German Shepherd</a></h5>
+      <p class="card-text">INR 10000 - 50000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Labrador%20Retriever.jpg" alt="Labrador Retriever" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Labrador Retriever</a></h5>
+      <p class="card-text">INR 13000 - 28000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+
+            </div>
+            
+              <div class="d-flex mb-3 ">
+              
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Pomeranian.jpg" alt="Pomeranian" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Pomeranian</a></h5>
+      <p class="card-text">INR 6000 - 15000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Pug.jpg" alt="Pug" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Pug</a></h5>
+      <p class="card-text">INR 20000 - 58000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/American%20Foxhound.jpg" alt="American Foxhound" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">American Foxhound</a></h5>
+      <p class="card-text">INR 33000 - 48000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Anatolian%20Shepherd.jpg" alt="Anatolian Shepherd" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Anatolian Shepherd</a></h5>
+      <p class="card-text">INR 67000 - 88000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+            
+            </div>
+            
+              <div class="d-flex mb-3 ">
+              
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Appenzeller.jpg" alt="Appenzeller" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Appenzeller</a></h5>
+      <p class="card-text">INR 60000 - 135000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Australian%20Cattle.jpg" alt="Australian Cattle
+" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Australian Cattle
+</a></h5>
+      <p class="card-text">INR 26000 - 69000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Australian%20Terrier.jpg" alt="Australian Terrier" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Australian Terrier</a></h5>
+      <p class="card-text">INR 53000 - 128000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Azawakh.jpg" alt="Azawakh" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Azawakh</a></h5>
+      <p class="card-text">INR 63000 - 98000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+           
+            </div>
+        </div>
+                
+                <div id="menu1" class=" tab-pane fade">
+            
+            <ul class="nav nav-pills justify-content-center mb-3" >
+ 
+  <li class="nav-item active"><a class="nav-link active" href="#a" data-toggle=tab>A</a></li>
+  <li class="nav-item "><a class="nav-link" href="#b" data-toggle=tab>B</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>C</a></li>
+                <li class="nav-item " ><a class="nav-link" href="#"   data-toggle=tab> D</a></li>
+                <li class="nav-item "><a class="nav-link" href="#"  data-toggle=tab>E</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>F</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>G</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>H</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>I</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>J</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>K</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>L</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>M</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>N</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>O</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>P</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>Q</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>R</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>S</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>T</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>U</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>V</a></li>
+                <li class="nav-item "><a class="nav-link" href="#">W</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>X</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>Y</a></li>
+                <li class="nav-item "><a class="nav-link" href="#" data-toggle=tab>Z</a></li>
+                
+  
+</ul>
+      <div class="tab-content">  <div id="a" class="tab-pane active">    <div class="d-flex mb-3">
+                
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Affenpinscher.png" alt="Affenpinscher" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Affenpinscher</a></h5>
+      <p class="card-text">INR 50000 - 125000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/afghan-hound.jpg" alt="Afghan Hound" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Afghan Hound</a></h5>
+      <p class="card-text">INR 30000 - 100000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Airedale-Terrier.jpg" alt="Airedale Terrier" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Airedale Terrier</a></h5>
+      <p class="card-text">INR 60000 - 150000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Akita.jpg" alt="Akita" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Akita</a></h5>
+      <p class="card-text">INR 23000 - 28000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+
+            </div>
+            
+              <div class="d-flex mb-3 ">
+              
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Alaskan%20Malamute.jpg" alt="Alaskan Malamute" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Alaskan Malamute</a></h5>
+      <p class="card-text">INR 60000 - 135000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/American-Eskimo.jpg" alt="American Eskimo" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">American Eskimo</a></h5>
+      <p class="card-text">INR 23000 - 28000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/American%20Foxhound.jpg" alt="American Foxhound" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">American Foxhound</a></h5>
+      <p class="card-text">INR 33000 - 48000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Anatolian%20Shepherd.jpg" alt="Anatolian Shepherd" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Anatolian Shepherd</a></h5>
+      <p class="card-text">INR 67000 - 88000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+            
+            </div>
+            
+              <div class="d-flex mb-3 ">
+              
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Appenzeller.jpg" alt="Appenzeller" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Appenzeller</a></h5>
+      <p class="card-text">INR 60000 - 135000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Australian%20Cattle.jpg" alt="Australian Cattle
+" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Australian Cattle
+</a></h5>
+      <p class="card-text">INR 26000 - 69000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Australian%20Terrier.jpg" alt="Australian Terrier" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Australian Terrier</a></h5>
+      <p class="card-text">INR 53000 - 128000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Azawakh.jpg" alt="Azawakh" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Azawakh</a></h5>
+      <p class="card-text">INR 63000 - 98000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+           
+            </div>
+                    
+                    </div>
+                    <div id="b" class="tab-pane fade">
+                    <div class="d-flex mb-3">
+               
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Barbet.jpg" alt="Barbet" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Barbet</a></h5>
+      <p class="card-text">INR 70000 - 155000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Basenji.jpg" alt="Basenji" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Basenji</a></h5>
+      <p class="card-text">INR 63000 - 128000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Basset%20Hound.jpg" alt="Basset Hound" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Basset Hound</a></h5>
+      <p class="card-text">INR 123000 - 258000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/beagle.jpg" alt="beagle" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Beagle</a></h5>
+      <p class="card-text">INR 23000 - 28000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+            
+            </div>
+            
+              <div class="d-flex mb-3 ">
+               
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Bedlington%20Terrier.jpg" alt="Bedlington Terrier" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Bedlington Terrier</a></h5>
+      <p class="card-text">INR 150000 - 225000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Bernese-Mountain
+.jpg" alt="Bernese Mountain
+" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Bernese Mountain
+</a></h5>
+      <p class="card-text">INR 23000 - 50000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Belgian-Malinois.jpg" alt="Belgian Malinois" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Belgian Malinois</a></h5>
+      <p class="card-text">INR 37000 - 88000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Bichon-Frise.jpg" alt="Bichon Frise" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Bichon Frise</a></h5>
+      <p class="card-text">INR 28000 - 58000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+           </div>
+            
+              <div class="d-flex mb-3 ">
+                
+                              
+                 <div class="card crd ml-5" style="width:240px">
+    <img class="card-img-top" src="jpg/Bloodhound.jpg" alt="Bloodhound" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Bloodhound</a></h5>
+      <p class="card-text">INR 50000 - 125000</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Bluetick%20Coonhound.jpg" alt="Bluetick Coonhound" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Bluetick Coonhound</a></h5>
+      <p class="card-text">INR 53000 - 98000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Boerboel.jpg" alt="Boerboel" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Boerboel</a></h5>
+      <p class="card-text">INR 63000 - 98000</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Bolognese.jpg" alt="Bolognese" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Bolognese</a></h5>
+      <p class="card-text">INR 123000 - 128000</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+        
+            </div>
+                    
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+        </div>
+        </div>
+            
+        <div class="navbar navbar-expand-sm bg-dark navbar-dark"><div class="row px-3">
+                
+              <p class="nav-text text-light my-md-2 mx-md-5">Copyright 2019 Trustees of Doggoshop </p> 
+                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link" href="privacy.html">Privacy</a>  </li>
+                    <li class="nav-item"> <a href="terms.html" class="nav-link" >Terms & conditions</a></li>
+                    <li class="nav-item"> <a href="about.html
+                        " class="nav-link" >About us</a> </li>
+                    <li class="nav-item"><a href="feed.html" class="nav-link" >Website   feedback</a></li>
+                    </ul>
+                    <div class="footimg ml-5">
+                   <a href="http://fb.com" target="_blank"> <img src="png/fb.png"></a>
+                        <a href="http://twitter.com" target="_blank"><img src="png/twit.png"></a>
+                        <a href="http://plus.google.com" target="_blank"><img src="png/gm.png"></a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    
+         
+            
+      
+   
+       
+    </body>
+</html>

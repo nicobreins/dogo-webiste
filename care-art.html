@@ -1,0 +1,326 @@
+<html lang="en">
+    
+<head>
+    <title>Online Dogs and Dog Accessories Store</title>
+   <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script> 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+        </head>
+    
+    <body>
+        
+        
+        <div class="container">
+            
+            <div class="modal fade" id="signin">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Sign-in</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+          <div class="form-group">
+  <label for="usr">Username:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  
+                <button type="submit" class="form-control btn btn-info" id="pwd">Sign-In</button>
+</div>
+            <a href="#">Forgot password</a><br>
+            <a href="#" data-toggle="modal" data-target="#signup"  data-dismiss="modal">New here! Create an account</a>
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+            
+            <div class="modal fade" id="signup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Sign-up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">Name:</label><br>
+  <input placeholder="First Name" type="text" class="form-control mr-1 " id="usr">
+              
+</div>
+            <div class="form-group">
+  
+  <input placeholder="Last Name" type="text" class="form-control" >
+              
+</div></form>
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">E-Mail:</label><br>
+  <input  type="email" class="form-control mr-1 w-80" id="usr" style="width: 410">
+              
+</div>
+            </form>
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">Mobile:</label><br>
+  <input  type="text" class="form-control mr-1 w-80" id="usr" style="width: 406">
+              
+</div>
+            </form>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  <label for="pwd">Confirm Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  
+                <button type="submit" class="form-control btn btn-info" id="pwd">Submit</button>
+</div>
+            
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+            
+            
+            
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top my-3"  >
+  
+  <a class="navbar-brand" href="index.html">
+      <img  src="png/logo.png" alt="DoggoShop_logo" style="width: 25px;height: auto"></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            
+ <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav mr-auto">
+  <li class="nav-item ">
+      <a class="nav-link " href="dog_shop.html" >
+        Shop
+        </a></li>
+    <li class="nav-item">
+      <a class="nav-link" href="adopt.html">Adopt</a>
+    </li>
+  
+      <li class="nav-item">
+      <a class="nav-link" href="care-art.html">Care Tips</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+      
+          
+  </ul>
+     
+     <a class="nav-item nav-link p-0 mr-2" data-toggle="modal" data-target="#signin"  ><img href="#" alt="login" src="png/login.png" style="width: 25px;height: auto   "></a>
+    
+           
+        <form class="form-inline " action="#" style="margin-bottom: 0" >
+    <input class="form-control mr-0 mr-sm-2 " type="text" placeholder="Search" style="max-width: 120px">
+    <button class="btn  btn-outline-info" type="submit">Search</button>
+  </form>  </div>
+</nav>
+            
+            
+       
+            <div class="popdls mb-5" >
+                <style>.popdls a:hover{text-decoration: none;
+                color: dimgrey}</style>
+             <h1 class=" display-4 mb-4 ml-4" >Care Tips</h1><hr>
+            <div class="d-flex ml-4 px-2">
+                <div class="col-md-12 p-0">
+                
+                            <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/care-dog.jpg" alt="care dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="care.html">General Dog Care</a></h5>
+      <p class="card-text">A dog can be a wonderful addition to any home, but whether you're an experienced pet parent or a first-time adopter, it's important to keep your canine companion's ... </p>
+      <a href="care.html" class="btn btn-primary text-light">Read More</a>
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Dog-Biscuit-Cropped-300x300.jpg" alt="DOg biscuit recipe" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">A Dog Biscuit Recipe Fit 
+for The Holiday Season</a></h5>
+      <p class="card-text">We hope you caught our yummy Thanksgiving Turkey Loafs recipe last month and had a wonderful Thanksgiving! As we ...   </p>
+        <a href="care.html" class="btn btn-primary text-light">Read More</a>
+      
+    </div>
+  </div>
+                                     <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/bigstock-Pet-owner-receiving-a-kiss-lic-120790937-300x300.jpg" alt="Mongrel" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">5 ways to tell your dog 
+you love them in their own
+language</a></h5>
+      <p class="card-text">“A dog is the only thing on earth that loves you more than he loves himself.” —Josh Billings Any intuitive dog owner ... </p>
+      <a href="care.html" class="btn btn-primary text-light">Read More</a>
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Puppy-with-John-Blog-300x300.jpg" alt="Well Adjusted dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">3 Things a New Puppy 
+Parent Should Do to Raise
+a Well Adjusted Dog</a></h5>
+      <p class="card-text">As a first-time dog owner, it is natural to be full of excitement anticipating the arrival ...</p>
+      <a href="care.html" class="btn btn-primary text-light">Read More</a>
+    </div>
+  </div>
+                </div>
+               
+                
+                </div>
+                
+                
+                
+                
+                
+                
+                
+               
+          
+        
+     
+            
+         </div>
+        
+       
+      <div class="popdls mb-5" >
+                <style>.popdls a:hover{text-decoration: none;
+                color: dimgrey}</style>
+           
+            <div class="d-flex ml-4 px-2">
+                <div class="col-md-12 p-0">
+                
+                            <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/Dog-Adoption-Tips-300x300.jpg" alt="care dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="care.html">Three Dog Adoption Tips from a Shelter Volunteer</a></h5>
+      <p class="card-text">Dog parents are responsible for the health and happiness of their pooch and providing a safe and caring ... </p>
+      <a href="care.html" class="btn btn-primary text-light">Read More</a>
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/savedog.jpg" alt="save dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">5 Clever Ways to Save Your Dog’s Life</a></h5>
+      <p class="card-text">Dog parents are responsible for maintaining the safety and happiness of their fur children. Feeding your pooch a well-balanced diet ...   </p>
+        <a href="care.html" class="btn btn-primary text-light">Read More</a>
+      
+    </div>
+  </div>
+                                     <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/amo.jpg" alt="Aromatherapy dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">A Beginners Guide To Using Aromatherapy On Dogs</a></h5>
+      <p class="card-text">We love our pets. They are very much a part of our families. They are very intelligent animals. You can bet when a dog ... </p>
+      <a href="care.html" class="btn btn-primary text-light">Read More</a>
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:240px">
+    <img class="card-img-top" src="jpg/stressed-dog.jpg" alt="stressed dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Signs Your Dog Is Stressed And How To Relieve It</a></h5>
+      <p class="card-text">
+We love our pets. When we bring a pet into our family, he becomes part of our family. We provide trips to the veterinariane ...</p>
+      <a href="care.html" class="btn btn-primary text-light">Read More</a>
+    </div>
+  </div>
+                </div>
+               
+                
+                </div>
+                
+                
+                
+                
+                
+                
+                
+               
+          
+        
+     
+            
+         </div>
+        
+       
+            
+            
+            
+            
+            
+            <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="care-art2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="care-art3.html">3</a></li>
+                
+                <li class="page-item"><a class="page-link" href="care-art2.html">Next</a></li>
+            
+            </ul>
+           
+            
+           
+        <div class="navbar navbar-expand-sm bg-dark navbar-dark"><div class="row px-3">
+                
+              <p class="nav-text text-light my-md-2 mx-md-5">Copyright 2019 Trustees of Doggoshop </p> 
+                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link" href="privacy.html">Privacy</a>  </li>
+                    <li class="nav-item"> <a href="terms.html" class="nav-link" >Terms & conditions</a></li>
+                    <li class="nav-item"> <a href="about.html
+                        " class="nav-link" >About us</a> </li>
+                    <li class="nav-item"><a href="feed.html" class="nav-link" >Website   feedback</a></li>
+                    </ul>
+                    <div class="footimg ml-5">
+                   <a href="http://fb.com" target="_blank"> <img src="png/fb.png"></a>
+                        <a href="http://twitter.com" target="_blank"><img src="png/twit.png"></a>
+                        <a href="http://plus.google.com" target="_blank"><img src="png/gm.png"></a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    
+         
+            
+      
+   
+       
+    </body>
+</html>

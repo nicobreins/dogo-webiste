@@ -1,0 +1,365 @@
+<html lang="en">
+    
+<head>
+    <title>Online Dogs and Dog Accessories Store</title>
+   <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script> 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+        </head>
+    
+    <body>
+        
+        
+        <div class="container">
+            
+            <div class="modal fade" id="signin">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Sign-in</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+          <div class="form-group">
+  <label for="usr">Username:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  
+                <button type="submit" class="form-control btn btn-info" id="pwd">Sign-In</button>
+</div>
+            <a href="#">Forgot password</a><br>
+            <a href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal">New here! Create an account</a>
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+            
+            <div class="modal fade" id="signup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Sign-up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">Name:</label><br>
+  <input placeholder="First Name" type="text" class="form-control mr-1 " id="usr">
+              
+</div>
+            <div class="form-group">
+  
+  <input placeholder="Last Name" type="text" class="form-control" >
+              
+</div></form>
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">E-Mail:</label><br>
+  <input  type="email" class="form-control mr-1 w-80" id="usr" style="width: 410">
+              
+</div>
+            </form>
+            <form class="form-inline">
+          <div class="form-group ">
+  <label class="mr-1"    for="usr">Mobile:</label><br>
+  <input  type="text" class="form-control mr-1 w-80" id="usr" style="width: 406">
+              
+</div>
+            </form>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  <label for="pwd">Confirm Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+            <div class="form-group">
+  
+                <button type="submit" class="form-control btn btn-info" id="pwd">Submit</button>
+</div>
+            
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+            
+            
+            
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top my-3"  >
+  
+  <a class="navbar-brand" href="index.html">
+      <img  src="png/logo.png" alt="DoggoShop_logo" style="width: 25px;height: auto"></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            
+ <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav mr-auto">
+     <li class="nav-item ">
+      <a class="nav-link " href="dog_shop.html" >
+        Shop
+        </a></li>
+    <li class="nav-item">
+      <a class="nav-link" href="adopt.html">Adopt</a>
+    </li>
+   
+      <li class="nav-item">
+      <a class="nav-link" href="care-art.html">Care Tips</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+      
+          
+  </ul>
+     
+     <a class="nav-item nav-link p-0 mr-2" data-toggle="modal" data-target="#signin"  ><img href="#" alt="login" src="png/login.png" style="width: 25px;height: auto   "></a>
+    
+           
+        <form class="form-inline " action="#" style="margin-bottom: 0" >
+    <input class="form-control mr-0 mr-sm-2 " type="text" placeholder="Search" style="max-width: 120px">
+    <button class="btn  btn-outline-info" type="submit">Search</button>
+  </form>  </div>
+</nav>
+        
+            
+        
+       
+              
+        <div class="popdls mb-4" >
+           <style>.popdls a:hover{text-decoration: none;
+                color: dimgrey}</style>
+  <h1 class="display-4  mb-4  ml-4" >Adopt - Dogs</h1><hr>
+                
+            <form class="form-inline ml-5 pl-2"  action="#">
+            <label for="filter"> Filter</label>
+                <select class="form-control ml-2" id="filter">
+                <option>Location:</option>
+                                    <option>Delhi</option> <option>Noida</option>
+                                       
+                                    <option>Mumbai</option>
+                                   
+                                    <option>Chennai</option>
+                
+                </select>
+                
+                <select class="form-control ml-2" id="filter">
+                <option>Breed:</option>
+                                    <option>Mixed Breed</option>
+                                    <option>Mongrel</option>
+                                    <option>Dachshund</option>
+                                    <option>Pariah Dog</option>
+                                    <option>Labrador</option>
+                                    <option>Pug</option><option>Labrador Retriever</option><option>Spitz German</option>
+                
+                </select>
+            <button type="button" class="btn btn-Primary ml-2">Find</button>
+            
+            </form>
+  
+            <div class="d-flex mb-3">
+                
+                              
+                 <div class="card crd ml-5" style="width:242px">
+     <img class="card-img-top" src="jpg/MIXED%20BREED.jpg" alt="mix_breed_dog" style="width:100%">
+    <div class="card-body">
+            <h5 class="card-title"><a href="#">Boni - Mixed Breed</a><span class="fa fa-mars ml-1"></span></h5>
+      <p class="card-text">Location : Delhi &nbsp; &nbsp;&nbsp; 2y 2m</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:242px">
+   <img class="card-img-top" src="jpg/Dachshund.jpg" alt="Dachshund" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Cucu - Dachshund</a><span class="fa fa-venus ml-1"></span></h5>
+      <p class="card-text">Location : Delhi      &nbsp; &nbsp;&nbsp;            1y 6m</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:242px">
+    <img class="card-img-top" src="jpg/Mongrel.jpg" alt="Mongrel" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Fizzy - Mongrel</a><span class="fa fa-venus ml-1"></span></h5>
+      <p class="card-text">Location : Delhi     &nbsp; &nbsp;&nbsp;                    2y 6m</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:242px">
+   <img class="card-img-top" src="jpg/Pariah%20Dog.jpg" alt="Pariah Dog" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Gofi - Pariah Dog</a><span class="fa fa-mars ml-1"></span></h5>
+      <p class="card-text">Location : Delhi    &nbsp; &nbsp;&nbsp;                              0y 6m</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+           
+            </div>
+            
+              <div class="d-flex mb-3">
+               
+                              
+                 <div class="card crd ml-5" style="width:242px">
+     <img class="card-img-top" src="jpg/Jackie.jpg" alt=" Mongrel_dog" style="width:100%">
+    <div class="card-body">
+            <h5 class="card-title"><a href="#">Jackie -  Mongrel</a><span class="fa fa-mars ml-1"></span></h5>
+      <p class="card-text">Location : Delhi &nbsp; &nbsp;&nbsp; 0y 7m</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:242px">
+   <img class="card-img-top" src="jpg/Nikki.jpg" alt="Nikki" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Nikki - Mongrel</a><span class="fa fa-venus ml-1"></span></h5>
+      <p class="card-text">Location : Delhi      &nbsp; &nbsp;&nbsp;            2y 10m</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:242px">
+    <img class="card-img-top" src="jpg/Zara.jpg" alt="Zara" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Zara - Labrador </a><span class="fa fa-venus ml-1"></span></h5>
+      <p class="card-text">Location : Chennai     &nbsp; &nbsp;&nbsp;                    7y 6m</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:242px">
+   <img class="card-img-top" src="jpg/JOY.jpg" alt="JOY" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">JOY - Labrador </a><span class="fa fa-mars ml-1"></span></h5>
+      <p class="card-text">Location : Delhi    &nbsp; &nbsp;&nbsp;                              5y 3m</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+           
+            </div>
+            
+               <div class="d-flex mb-3">
+
+                              
+                 <div class="card crd ml-5" style="width:242px">
+     <img class="card-img-top" src="jpg/Bobo.jpg" alt="mix_breed_dog" style="width:100%">
+    <div class="card-body">
+            <h5 class="card-title"><a href="#">Bobi - Mixed Breed</a><span class="fa fa-mars ml-1"></span></h5>
+      <p class="card-text">Location : Noida &nbsp; &nbsp;&nbsp; 0y 6m</p>
+      
+    </div>
+  </div>
+                <div class="card crd ml-4" style="width:242px">
+   <img class="card-img-top" src="jpg/Snowy.jpg" alt="Snowy" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Snowy - Mixed</a><span class="fa fa-venus ml-1"></span></h5>
+      <p class="card-text">Location : Delhi      &nbsp; &nbsp;&nbsp;            0y 3m</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:242px">
+    <img class="card-img-top" src="jpg/Mini.jpg" alt="Mongrel" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">Mini - Mongrel</a><span class="fa fa-venus ml-1"></span></h5>
+      <p class="card-text">Location : Delhi     &nbsp; &nbsp;&nbsp;                    0y 6m</p>
+      
+    </div>
+  </div>
+                        <div class="card crd ml-4" style="width:242px">
+   <img class="card-img-top" src="jpg/Tuffy.jpg" alt="Spitz German" style="width:100%">
+    <div class="card-body pr-1">
+        <h5 class="card-title"><a href="#">Tuffy - Spitz German</a><span class="fa fa-mars ml-1"></span></h5>
+      <p class="card-text">Location : Delhi    &nbsp; &nbsp;&nbsp;                             7y 6m</p>
+      
+    </div>
+  </div>
+            
+                        
+            
+                
+               
+               
+            
+            
+            </div>
+        
+        </div>
+            
+            <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="adopt.html">Previous</a></li>
+                <li class="page-item "><a class="page-link" href="adopt.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item "><a class="page-link" href="adopt3.html">3</a></li>
+                
+                <li class="page-item"><a class="page-link" href="adopt3.html">Next</a></li>
+            
+            </ul>
+           
+        <div class="navbar navbar-expand-sm bg-dark navbar-dark"><div class="row px-3">
+                
+              <p class="nav-text text-light my-md-2 mx-md-5">Copyright 2019 Trustees of Doggoshop </p> 
+                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link" href="privacy.html">Privacy</a>  </li>
+                    <li class="nav-item"> <a href="terms.html" class="nav-link" >Terms & conditions</a></li>
+                    <li class="nav-item"> <a href="about.html
+                        " class="nav-link" >About us</a> </li>
+                    <li class="nav-item"><a href="feed.html" class="nav-link" >Website   feedback</a></li>
+                    </ul>
+                    <div class="footimg ml-5">
+                   <a href="http://fb.com" target="_blank"> <img src="png/fb.png"></a>
+                        <a href="http://twitter.com" target="_blank"><img src="png/twit.png"></a>
+                        <a href="http://plus.google.com" target="_blank"><img src="png/gm.png"></a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    
+         
+            
+      
+   
+       
+    </body>
+</html>

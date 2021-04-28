@@ -1,0 +1,28 @@
+body a{cursor: url(cursor.png),auto}
+body input{cursor: url(cursor2.png),auto}
+body textarea{cursor: url(cursor2.png),auto}
+body {background: url(back-100.jpg);
+    background-attachment: fixed
+}
+.container{background-color: white;
+padding: 0;
+box-shadow: 1px 1px 10px grey}
+body button {cursor:  url(cursor.png),auto !important}
+.jmbimg img{margin: 0;
+padding: 0;
+
+
+}
+
+//.flex-cont {display: flex;
+flex-direction: row}
+
+.crd {float: left}
+
+.popdls a{ color: black};
+.popdls a:hover{text-decoration: none}
+
+footer{background-color: #373A3C;
+height:75px}
+
+footer p{display: inline}
